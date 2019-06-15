@@ -4,6 +4,11 @@
 
 This repository contains the code for reproducing the results for [Divide and Conquer the Embedding Space for Metric Learning](http://openaccess.thecvf.com/content_CVPR_2019/papers/Sanakoyeu_Divide_and_Conquer_the_Embedding_Space_for_Metric_Learning_CVPR_2019_paper.pdf) (CVPR 2019) with the datasets [In-Shop Clothes](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/InShopRetrieval.html), [Stanford Online Products](http://cvgl.stanford.edu/projects/lifted_struct/) and [PKU VehicleID](https://www.pkuml.org/resources/pku-vehicleid.html).
 
+**Paper**: [pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Sanakoyeu_Divide_and_Conquer_the_Embedding_Space_for_Metric_Learning_CVPR_2019_paper.pdf)  
+**Supplementary**: [pdf](http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Sanakoyeu_Divide_and_Conquer_CVPR_2019_supplemental.pdf)
+
+<img src="https://asanakoy.github.io/images/teaser_cvpr19_dml.jpg" width="480" alt="method pipeline">
+
 ## Requirements
 
 - Python version 3.6.6 or higher
