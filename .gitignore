@@ -1,0 +1,15 @@
+
+# for files opened by jupyter notebook, e.g. log files
+.nfs000* 
+
+.DS_Store
+._.DS_Store
+*.pt
+*.pyc
+__pycache__/
+.ipynb_checkpoints
+notebooks/
+log/
+
+# vs code files
+._* 

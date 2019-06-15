@@ -1,0 +1,8 @@
+
+.DS_Store
+._.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+._*
+.nfs*
+

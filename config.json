@@ -1,0 +1,71 @@
+{
+    "random_seed": 0,
+    "verbose": false,
+    "save_model": true,
+    "cuda_device": 0,
+    "sz_embedding": 128,
+    "backend": "faiss-gpu",
+    "nb_epochs": 200,
+    "nb_clusters": 8,
+    "finetune_epoch": 100,
+    "dataset_selected": "sop",
+    "dataset": {
+        "vid": {
+            "root": "/export/home/vtschern/data/vehicle-id/VehicleID_V1.0",
+            "classes": {
+                "train": "range(0, 13164)",
+                "init": "range(0, 13164)",
+                "_note": "small: 800, mid: +1600, large: +2400",
+                "eval": "range(13164, 13164 + 2400)"
+            }
+        },
+        "inshop": {
+            "root": "/export/home/vtschern/data/in-shop",
+            "classes": {
+                "train": "range(0, 3997)",
+                "init": "range(0, 3997)",
+                "eval": "range(0, 3985)"
+            }
+        },
+        "sop": {
+            "root": "/export/home/vtschern/data/sop",
+            "classes": {
+                "train": "range(0, 11318)",
+                "init": "range(0, 11318)",
+                "eval": "range(11318, 22634)"
+            }
+        }
+    },
+    "log": {
+        "path": "log/default",
+        "name": "sop-K-8-M-2-exp-0"
+    },
+    "dataloader": {
+        "num_workers": 4,
+        "drop_last": false,
+        "shuffle": false,
+        "pin_memory": true,
+        "batch_size": 80
+    },
+    "opt": {
+        "backbone": {
+            "lr": 1e-5,
+            "weight_decay": 1e-4
+        },
+        "embedding": {
+            "lr": 1e-5,
+            "weight_decay": 1e-4
+        }
+    },
+    "recluster": {
+        "enabled": true,
+        "mod_epoch": 2
+    },
+    "transform_parameters": {
+        "rgb_to_bgr": false,
+        "intensity_scale": [[0, 1], [0, 1]],
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+        "sz_crop": 224
+    }
+}
