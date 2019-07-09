@@ -7,6 +7,9 @@ This repository contains the code for reproducing the results for [Divide and Co
 **Paper**: [pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Sanakoyeu_Divide_and_Conquer_the_Embedding_Space_for_Metric_Learning_CVPR_2019_paper.pdf)  
 **Supplementary**: [pdf](http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Sanakoyeu_Divide_and_Conquer_CVPR_2019_supplemental.pdf)
 
+We also applied our method to the [Humpback Whale Identification Challenge](https://www.kaggle.com/c/humpback-whale-identification/overview) at Kaggle and finisheda at 10th place out of /2131.
+**Slides**: [link](https://slides.com/asanakoy/metric-learning-kaggle-whales)
+
 <img src="https://asanakoy.github.io/images/teaser_cvpr19_dml.jpg" width="480" alt="method pipeline">
 
 ## Requirements
