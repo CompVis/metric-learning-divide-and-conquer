@@ -77,18 +77,18 @@ class Sampler(nn.Module):
                 np.atleast_1d(neg[i].nonzero().squeeze().cpu().numpy())
             )
 
-        if len(a_indices) != len(p_indices) or len(a_indices) != len(n_indices):
-            logging.warning(
-                'Probably too many positives, because of lacking classes in' +
-                ' the current cluster.' +
-                ' n_anchors={}, n_pos={}, n_neg= {}'.format(
-                    *map(len, [a_indices, p_indices, n_indices])
+            if len(a_indices) != len(p_indices) or len(a_indices) != len(n_indices):
+                logging.warning(
+                    'Probably too many positives, because of lacking classes in' +
+                    ' the current cluster.' +
+                    ' n_anchors={}, n_pos={}, n_neg= {}'.format(
+                        *map(len, [a_indices, p_indices, n_indices])
+                    )
                 )
-            )
-            min_len = min(map(len, [a_indices, p_indices, n_indices]))
-            a_indices = a_indices[:min_len]
-            p_indices = p_indices[:min_len]
-            n_indices = n_indices[:min_len]
+                min_len = min(map(len, [a_indices, p_indices, n_indices]))
+                a_indices = a_indices[:min_len]
+                p_indices = p_indices[:min_len]
+                n_indices = n_indices[:min_len]
 
         assert len(a_indices) == len(p_indices) == len(n_indices), \
                 '{}, {}, {}'.format(
