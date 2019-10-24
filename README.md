@@ -39,6 +39,10 @@ The model checkpoints and log files are saved in the selected log-directory. You
 
 You will get slightly higher results than what we have reported in the paper. For SOP, In-Shop and Vehicle-ID the R@1 results should be somewhat around 76.40, 87.36 and 91.54.
 
+## Related Repos
+
+- Collection of baselines for metric learning from @Confusezius [[PyTorch](https://github.com/Confusezius/Deep-Metric-Learning-Baselines)]
+
 ## License
 
 You may find out more about the license [here](LICENSE)
